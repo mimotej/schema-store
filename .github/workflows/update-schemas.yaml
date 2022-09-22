@@ -1,8 +1,6 @@
 name: Update schemas in repository
 on:  # yamllint disable-line rule:truthy
-  schedule:
-    - cron: '0 3 * * *'
-
+  workflow_dispatch
 jobs:
   update-store:
     strategy:
